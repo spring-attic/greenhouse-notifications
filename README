@@ -1,0 +1,11 @@
+This Node application publishes notifications to the main Greenhouse web application.  It receives messages from a Redis pub/sub topic and then pushes them out to subscribed browser clients via the Socket.IO Node module.
+
+The app can be started locally (assuming you have NodeJS set up correctly) by executing 'node app.js' from the root directory of the project.
+
+When running in local mode, it is expected that there is also already a local Redis instance running (on localhost using the default Redis port).
+
+When running on Cloud Foundry, it is expected that the app has a Redis service bound to it.
+
+The app will auto-detect its environment on startup, configuring the correct Redis connection based on what is detected.
+
+Socket.IO is currently configured to only use the Comet long-polling technique, as Cloud Foundry does not currently allow WebSocket traffic.
