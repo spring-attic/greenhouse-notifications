@@ -7,7 +7,7 @@
  * Derived from:
  * 		The Bouncy Castle Crypto package, 
  * 		Copyright (c) 2000-2004 The Legion Of The Bouncy Castle
- * 		(http://www.bouncycastle.org)
+ * 		(https://www.bouncycastle.org)
  * 
  * See LICENSE.txt for full license information.
  */
